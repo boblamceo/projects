@@ -39,7 +39,7 @@ export default function Home() {
 					<Image src={Icon} alt="e" className={styles.svg} width="35" height="35" />
 					<div className={styles.title} onClick={() => {
               alert('ur already here!!')
-             }}>Bob's Projects</div>
+             }}>Bob&apos;s Projects</div>
 				</div>
 			</div>
 

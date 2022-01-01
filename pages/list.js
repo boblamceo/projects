@@ -21,6 +21,12 @@ export default function Home() {
 			index: 0
 		},
 	];
+    const transition = useTransition(anim, {
+        from: { x: -100, y: 0, opacity: 0 },
+        enter: { x: 0, y: 0, opacity: 1 },
+        leave: { x: 100, y: 0, opacity: 0 },
+        config: config.stiff
+    });
 	return (
 		<div className={styles.container}>
 			<Head>
@@ -37,18 +43,12 @@ export default function Home() {
               setTimeout(() => {
                 router.push('/')
               }, 1000)
-             }} className={styles.title}>Bob's Projects</div>
+             }} className={styles.title}>Bob&apos;s Projects</div>
 				</div>
 			</div>
 
 			<ul className={styles.listMain}>
 				{projects.map((curr, index) => {
-					const transition = useTransition(anim, {
-						from: { x: -100, y: 0, opacity: 0 },
-						enter: { x: 0, y: 0, opacity: 1 },
-						leave: { x: 100, y: 0, opacity: 0 },
-						config: config.stiff
-					});
 					return (
 						<li style={{ listStyle: 'none' }} key={index}>
 							{transition(
