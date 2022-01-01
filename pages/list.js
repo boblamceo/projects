@@ -55,7 +55,7 @@ export default function Home() {
 								(style, item) =>
 									item ? (
 										<animated.a href={curr.url} className={styles.wrapper} style={style}>
-											<div className={`${styles['imgWrapper']} ${styles[`img${curr.index}`]}`}></div>
+											<div className={styles['imgWrapper'] + '' + styles[`img${curr.index}`]}></div>
 											<div className={styles.textWrapper}>
 												<h1>{curr.name}</h1>
 												<p>{curr.description}</p>
