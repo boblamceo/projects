@@ -29,7 +29,7 @@ export default function Home() {
 	return (
 		<div className={styles.container}>
 			<Head>
-				<title>Bob's Projects</title>
+				<title>Bob&apos;s Projects</title>
 				<meta name="description" content="Some projects made by a random person" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
