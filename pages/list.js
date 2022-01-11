@@ -17,8 +17,8 @@ export default function Home() {
 			name: 'Snake',
 			description:
 				'A classic snake game. Features include gradually increasing speed, colour change, hacks, and weird death messages. Good luck. ',
-			url: 'https://loving-shaw-8acfa3.netlify.app/',
-			index: 0
+			url: 'https://smake.netlify.app/',
+			index: 0,
 		},
 	];
     const transition = useTransition(anim, {
